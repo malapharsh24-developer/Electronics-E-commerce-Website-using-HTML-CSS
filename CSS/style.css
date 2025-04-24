@@ -1,0 +1,627 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* ------------------------------------------------    UTILITY classes -------------------------------------------------*/
+.w-full{
+    width: 100%;
+}
+.h-full{
+    height: 100%;
+}
+.container{
+    width: 100%;
+    padding: 1.5rem 3rem;
+    max-width: 1280px;
+    margin : 0 auto;
+}
+/* FLEXBOX */
+
+.d-flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-space-between{
+    justify-content: space-between;
+}
+.justify-space-evenly{
+    justify-content: space-evenly;
+}
+.align-center{
+    align-items : center;
+}
+.align-start{
+    align-items: start;
+}
+ /* Text decoration */
+ 
+/* ____________________________________________________________________________________________________________________________ */
+
+/* NORMAL STYLING */
+
+/* header styling start */
+header{
+    /* background: #000;
+    color : #fff; */
+    max-height: 4rem;
+    background: #fff;
+    position: sticky;
+}
+header > .logo{
+    width: 5rem;
+}
+header > .logo > img{
+    width:100%;
+    padding: 1rem 0 0 0 ;
+}
+.search-bar{
+    width: 20rem;
+    & input{
+        border: 1px solid teal;
+        border-right: none;
+        outline: none;
+        padding: 0.2rem 0.5rem;
+        flex : 1;
+        
+    }
+    & button {
+        background-color: teal;
+        padding: 0.3rem 0.7rem ;
+        font-size: 0.7rem;
+        border: none;
+        color : #fff;
+        cursor: pointer;
+        transition: 0.3s all 0.1s;
+
+        &:hover{
+            background-color: lightseagreen;
+        }
+    }
+}
+nav{
+
+    & ul{
+        list-style: none;
+        gap : 1rem;
+
+        & li{
+            cursor: pointer;
+            position: relative;
+        }
+        & li > a{
+            color : #000;
+            text-decoration: none;
+            font-size: 0.75rem;
+        }
+
+        & li > button{
+            background-color : teal;
+    border: none;
+    outline: none;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 2%;
+
+    & a{
+        text-decoration: none;
+        color : #fff;
+        transition: all 0.3s 0.1s;
+    }
+
+    &:hover{
+        background-color : lightseagreen;
+        transform: translateY(-0.1rem);
+    }
+        }
+    }
+}
+nav > ul > li> a:hover {
+    color : teal;
+    transform: translateY(-1rem);
+}
+
+nav > ul > li > a::after {
+    content: "";
+    height: 0.1rem;
+    width: 0%;
+    background-color: teal;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s all 0.1s;
+}
+
+nav > ul > li > a:hover::after {
+    width: 100%;
+}
+
+
+select{
+    /* background: black;
+    color : #fff; */
+    outline: none;
+    border : none;
+    cursor: pointer;
+
+    & option{
+        cursor: pointer;
+    }
+}
+
+
+.menu {
+    display:  none;
+    background : transparent;
+    color : teal;
+    border: none;
+    outline: none;
+}
+
+/* header styling end */
+
+
+/* ****************************************************************************************************************** */
+
+
+/* hero section styling start */
+.hero{
+    height: 85vh;
+}
+
+.overlay{
+    background: #000;
+    gap : 1rem;
+    }
+
+.hero > .overlay > .left{
+    width: 50%;
+    /* background-color: red; */
+    position: relative;
+
+    & img{
+        width: 80%;
+        z-index  : 10;
+    }
+
+    & .glow {
+        height: 18rem;
+        width: 18rem;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        top : 1rem;
+        right : 6rem;
+        animation: pulsatingCircle 8s infinite alternate;
+    }
+}
+
+@keyframes pulsatingCircle {
+    0% {
+        opacity: 0.8;
+        transform: scale(1);
+        background-image: radial-gradient(circle at 40% 40%, rgba(255, 165, 0, 0.8) 0%, rgba(255, 0, 0, 0.2) 70%, transparent 100%); /* Orange to Red */
+    }
+    25% {
+        opacity: 1;
+        transform: scale(1.1);
+        background-image: radial-gradient(circle at 60% 40%, rgba(173, 216, 230, 0.8) 0%, rgba(70, 130, 180, 0.2) 70%, transparent 100%); /* Light Blue to Steel Blue */
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1);
+        background-image: radial-gradient(circle at 60% 60%, rgba(144, 238, 144, 0.8) 0%, rgba(34, 139, 34, 0.2) 70%, transparent 100%); /* Light Green to Forest Green */
+    }
+    75% {
+        opacity: 1;
+        transform: scale(1.1);
+        background-image: radial-gradient(circle at 40% 60%, rgba(255, 255, 0, 0.8) 0%, rgba(255, 215, 0, 0.2) 70%, transparent 100%); /* Yellow to Gold */
+    }
+    100% {
+        opacity: 0.8;
+        transform: scale(1);
+        background-image: radial-gradient(circle at 40% 40%, rgba(255, 165, 0, 0.8) 0%, rgba(255, 0, 0, 0.2) 70%, transparent 100%); /* Back to Orange to Red */
+    }
+}
+
+
+.hero > .overlay > .right{
+    width: 50%;
+    padding: 1rem 0;
+    & h2{
+        font-size: 1.5rem;
+        font-weight: 600;
+        color : lightseagreen;
+
+    }
+
+    & h1{
+        font-size: 3rem;
+        color : #fff;
+        text-shadow: 0px 0px 10px  #000;
+    }
+
+    & p{
+        color : lightseagreen;
+        font-style:oblique;
+        margin-top: 2rem;
+    }
+}
+/* hero section styling end */
+
+/* About section styling start */
+.heading > h3{
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: italic;
+    color : teal;
+}
+
+.about > .about-info {
+    margin-top: 2rem;
+}
+
+.about-icons{
+    /* background-color: rgb(161, 161, 161); */
+    margin-top: 2rem;
+}
+
+.about-icon-card{
+    max-width: 32%;
+    border : 1px solid teal;
+    border-radius: 4px;
+    padding: 1rem;
+    transition: all 0.3s 0.1s;
+    cursor: pointer;
+
+    & .icon{
+        background: linear-gradient(to bottom right, teal , lightseagreen);
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        margin : 0 auto;
+
+        & i{
+            font-size: 1rem;
+            color : #fff;
+        }
+    }
+    & h2{
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    & p{
+        font-size: 0.7rem;
+    }
+}
+
+.about-icon-card:hover{
+    box-shadow: 2px 2px 5px #61928a;
+    transform: translate(-2px, -2px);
+}
+/* About section styling end */
+
+
+/* ****************************************************************************************************************** */
+
+
+/* Products Section styling start */
+.product-container {
+    margin-bottom: 1rem;
+}
+.product-card{
+    max-width: 24%;
+    height: 16rem;
+    border : 1px solid teal;
+    border-radius: 4px;
+    padding: 0.6rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    background-color: #fff;
+    text-overflow : ellipsis;
+    overflow: hidden;
+    flex:1;
+
+    & .product-image{
+        height: 45%;
+        padding: 0.2rem 0;
+
+        & img{
+            max-height: 100%;
+            object-fit: cover;
+        }
+    }
+    & h2{
+        font-size: 0.8rem;
+        white-space:  nowrap;
+        overflow : hidden;
+        text-overflow: ellipsis;
+        
+    }
+
+    & p{
+        font-size: 0.5rem;
+        margin-bottom: 0.3rem;
+        white-space: nowrap;
+        overflow : hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.product-card > .price-info{
+    & .rating{
+        /* background-color: chartreuse; */
+        margin-bottom: 0.3rem;
+        line-height: 0.7rem;
+        & p{
+            font-size: 0.65rem;
+            margin-right: 0.3rem;
+            margin-top: 0.1rem;
+        }
+        & b{
+            font-size: 0.7rem;
+            color : lightseagreen;
+
+            & span {
+                color : gold;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    & .price{
+        padding: 0;
+        line-height: 1.8rem;
+        gap: 1rem;
+        position: relative;
+        & b{
+            font-size: 1.5rem;
+            font-weight: 600;
+    
+            & i{
+                font-size: 0.6rem;
+                margin-right: 0.2rem;
+                padding-top: 0.25rem;
+            }
+        }
+
+        & .strikethrough {
+            text-decoration: line-through;
+            color : grey;
+            font-size: 0.6rem;
+            position: absolute;
+            right : 1rem;
+            bottom : -5px;
+            & i{
+                font-size: 0.5rem;
+            }
+        }
+    } 
+}
+
+.product-card > .btn-section{
+    gap : 0.5rem;
+    & button {
+        padding: 0.3rem 0.6rem;
+        margin-top: 0.6rem;
+        cursor: pointer;
+        outline : none;
+        flex: 1;
+        transition: 0.3s all 0.1s;
+    }
+}
+
+.view-more{
+    background-color: #fff;
+    color : teal;
+    border : 1px solid teal;
+
+    &:hover{
+        color: lightseagreen;
+        border : 1.5px solid lightseagreen;
+    }
+}
+
+.cart-btn{
+    background-color: teal;
+    border : none;
+    color : #fff;
+
+    &:hover{
+        background-color: lightseagreen;
+    }
+}
+
+
+.Computers {
+    background-color: rgb(241, 255, 253);
+}
+.Headphones {
+    background-color: rgb(241, 255, 253);
+}
+/* Products Section styling end */
+
+
+
+/* ****************************************************************************************************************** */
+
+
+
+/* Contact us section styling start */
+.contactUs{
+    padding: 2rem 0;
+    background-color: teal;
+}
+.form-container {
+    max-width: 800px;
+    height: 80%;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    border : 1px solid teal;
+    height: 100%;
+    background-color: #fff;
+}
+.form-container > form {
+    height: 70%;
+}
+.form-container > span > i{
+    font-size: 6rem;
+    color : rgb(0, 172, 161);
+    text-align: center;
+    margin : 0 auto;
+}
+.form-container > h2{
+    text-align: center;
+    color : teal;
+    margin-bottom: 1.2rem;
+}
+.input-container > label {
+    color : teal;
+    font-size: 0.7rem;
+}
+.input-container > label > input {
+    margin-bottom: 0.7rem;
+    font-size: 0.8rem;
+    text-indent: 0.5rem;
+    border: 1px solid teal;
+    outline: none;
+    padding: 0.3rem 0;
+    width: 48%;
+}
+#name{
+    margin-right: 1rem;
+}
+.form-container > form >textarea {
+    resize: none;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid teal;
+    outline: none;
+    width: 100%;
+    height: 6.5rem;
+}
+.form-container button {
+    background-color: teal;
+    color : #fff;
+    margin: 0 auto;
+    cursor: pointer;
+    outline: none;
+    border : none;
+    padding: 0.3rem 0.7rem;
+    margin-top: 1rem;
+}
+.form-container button:hover{
+    background-color: rgb(0, 148, 148);
+    transform: scale(1.05);
+}
+/* Contact us section styling end */
+
+
+/* ****************************************************************************************************************** */
+
+/* Footer styling start */
+footer {
+    background: #0e0e0e;
+    color : rgb(99, 99, 99);
+    padding: 3rem 0;  
+}
+footer > .container {
+    justify-content: space-evenly;
+}
+footer > .container > .left{
+    flex : 1;
+    color :#fff;
+}
+
+footer > .container > .left > h2 {
+    font-size: 0.7rem;
+}
+.social-media-icons {
+    gap : 0.8rem;
+    margin-top: 1.5rem;
+
+    & .icon-bg{
+        background-color: rgb(99, 99, 99);
+        color : #0e0e0e;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s all 0.1s;
+        cursor: pointer;
+
+        &:hover{
+            background-color: #fff;
+            transform: translateY(-0.2rem);
+        }
+
+       
+    }
+}
+footer > .container > .middle{
+    flex : 1;
+}
+footer > .container > .middle {
+    gap : 4rem;
+
+}
+footer > .container > .middle > .links> ul > li{
+    list-style: none;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s all 0.1s;
+}
+footer > .container > .middle > .links> ul > li:hover{
+    color : #fff;
+}
+footer > .container > .right{
+    flex : 1;
+
+    & h4{
+        font-size: 0.7rem;
+    }
+
+    & p{
+        color : #fff;
+        font-size: 0.8rem;
+        margin: 0.8rem 0;
+    }
+
+    & .mail-section{
+        gap : 0.5rem;
+        & input {
+            text-indent: 0.3rem;
+            padding: 0.1rem 0;
+            font-size: 0.7rem;
+            flex: 0.7;
+        }
+
+        & button {
+            font-size: 0.65rem;
+            font-weight: 600;
+            padding: 0 0.3rem;
+            background-color: teal;
+            border: none;
+            outline : none;
+            color : #fff;
+            cursor: pointer;
+
+            &:hover{
+                background-color: lightseagreen;
+            }
+        }
+    }
+}
+/* Footer styling end */

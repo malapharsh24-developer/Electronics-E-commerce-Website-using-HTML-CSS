@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HM Electronics</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/media.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header start -->
+    <header class="d-flex container align-center justify-space-between">
+      <div class="logo">
+        <img src="../Images/HMlogo.png" alt="">
+      </div>
+      <div class="search-bar d-flex">
+        <input type="text" name="search" id="search" placeholder="Search for products here ..." autocomplete="off">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <nav>
+        <ul class="d-flex">
+          <li><a href="#">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li>
+            <select onchange="location = this.value;">
+              <option value="#">Products</option>
+              <option value="#Laptops">Laptops</option>
+              <option value="#Smartphones">Smartphones</option>
+              <option value="#Headphones">Headphones</option>
+              <option value="#Speakers">Speakers</option>
+            </select>
+          </li>
+          <li><a href="#ContactUs">Contact Us</a></li>
+          <li><a href="#">Cart <i class="fa-solid fa-cart-shopping"></i> </a></li>
+          <li><button><a href="#">Sign Up/Sign In</a></button></li>
+        </ul>
+      </nav>
+  
+      <button class="menu"><i class="fa-solid fa-bars"></i></button>
+    </header>
+    <!-- Header end -->
+
+    <!-- Hero section start -->
+    <section class="hero">
+      <div class="overlay w-full h-full d-flex container">
+        <div class="left h-full d-flex justify-center align-center">
+          <img src="../Images/Hero_section_image.png" alt="hero section image">
+          <div class="glow"></div>
+        </div>
+        <div class="right h-full">
+          <h2>Welcome to, India's Largest Electronics E-commerce</h2>
+          <h1>
+            HM
+            <span><i class="fa-solid fa-headphones-simple"></i></span>
+            ELECTRONICS
+          </h1>
+          <p>Electrify Your Lifestyle</p>
+        </div>
+      </div>
+    </section>
+    <!-- Hero section end -->
+
+    <!-- About Section start -->
+     <section class="about container" id="About">
+      <div class="heading">
+        <h1>About Us</h1>
+        <h3>A must visit ecommerce platform, to make your home beautiful and smart.</h3>
+      </div>
+        
+      <div class="about-info">
+        <p>Discover a world of innovative electronics at your fingertips. We offer a curated selection of high-quality gadgets, including smart home solutions, premium audio equipment, and the newest mobile accessories. Backed by our commitment to exceptional customer service and a seamless online shopping experience, HM Electronics is your trusted source for staying connected and empowered by technology.</p>
+      </div>
+
+      <div class="about-icons d-flex justify-space-between">
+        <div class="about-icon-card">
+          <div class="icon d-flex justify-center align-center">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+          </div>
+          <h2>Pricing</h2>
+          <p>We provide all the products with affordable prizes for our customers.Looking forward to customers' satisfaction, we give huge discounts too.</p>
+        </div>
+
+        <div class="about-icon-card">
+          <div class="icon d-flex justify-center align-center">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <h2>Fast Delivery</h2>
+          <p>Experience swift and dependable shipping across India. We partner with trusted logistics providers to ensure your orders arrive safely and on time, right to your doorstep.</p>
+        </div>
+
+        <div class="about-icon-card">
+          <div class="icon d-flex justify-center align-center">
+            <i class="fa-solid fa-hands-holding-child"></i>
+          </div>
+          <h2>Customer Support</h2>
+          <p>Our friendly and knowledgeable support team is here to assist you every step of the way. From pre-purchase inquiries to post-delivery assistance, we're committed to your satisfaction.</p>
+        </div>
+      </div>
+
+     </section>
+    <!-- About Section end -->
+
+    <!-- Products section start -->
+     <section class="products-section">
+        <!-- COMPUTERS SECTION -->
+        <section class="product Computers container" id="Laptops">
+          <div class="heading">
+            <h2>Laptops & Accessories</h2>
+            <h3>Powering Your Digital World with the Latest Tech.</h3>
+            <div class="product-container d-flex justify-space-between">
+
+              <div class="product-card">
+                <div class="product-image d-flex justify-center">
+                  <img src="../Images/Dell_inspiron.PNG" alt="">
+                </div>
+                <div class="product-description">
+                  <h2>Dell Inspiron 3535 Laptop</h2>
+                  <p>i5-1334U Processor, 16GB DDR5 + 1TB SSD</p>
+                </div>
+                <div class="price-info">
+                  <div class="rating d-flex align-center"><p>Rating : </p><b>4.5 <span>&starf;</span></b></div>
+                  <div class="price d-flex ">
+                    <b class="d-flex "><i class="fa-solid fa-indian-rupee-sign"></i>56,000</b>
+                    <b class=" strikethrough">MRP : <i class="fa-solid fa-indian-rupee-sign"></i>75,000</b>
+                  </div>
+                </div>
+                <div class="btn-section d-flex">
+                  <button class="view-more">View More</button>
+                  <button class="cart-btn">Add to cart</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image d-flex justify-center">
+                  <img src="../Images/lenovo_ideapad_.PNG" alt="">
+                </div>
+                <div class="product-description">
+                  <h2>Lenovo IdeaPad Slim 3</h2>
+                  <p>Intel Core i5-12450H, 12th Gen, 16GB RAM, 512GB SSD</p>
+                </div>
+                <div class="price-info">
+                  <div class="rating d-flex align-center"><p>Rating : </p><b>3.9<span>&starf;</span></b></div>
+                  <div class="price d-flex ">
+                    <b class="d-flex "><i class="fa-solid fa-indian-rupee-sign"></i>49,900</b>
+                    <b class=" strikethrough">MRP : <i class="fa-solid fa-indian-rupee-sign"></i>65,000</b>
+                  </div>
+                </div>
+                <div class="btn-section d-flex">
+                  <button class="view-more">View More</button>
+                  <button class="cart-btn">Add to cart</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image d-flex justify-center">
+                  <img src="../Images/HP2.PNG" alt="">
+                </div>
+                <div class="product-description">
+                  <h2>HP 15s Light Laptop</h2>
+                  <p>12th Gen Intel Core i5-1235U, 8GB DDR4, 512GB SSD</p>
+                </div>
+                <div class="price-info">
+                  <div class="rating d-flex align-center"><p>Rating : </p><b>4.0 <span>&starf;</span></b></div>
+                  <div class="price d-flex ">
+                    <b class="d-flex "><i class="fa-solid fa-indian-rupee-sign"></i>43,990</b>
+                    <b class=" strikethrough">MRP : <i class="fa-solid fa-indian-rupee-sign"></i>67,380</b>
+                  </div>
+                </div>
+                <div class="btn-section d-flex">
+                  <button class="view-more">View More</button>
+                  <button class="cart-btn">Add to cart</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image d-flex justify-center">
+                  <img src="/Images/MacBook.PNG" alt="">
+                </div>
+                <div class="product-description">
+                  <h2>Apple MacBook Air with M2 chip</h2>
+                  <p>Liquid Retina Display, 8GB RAM, 512GB SSD Storage, Backlit Keyboard</p>
+                </div>
+                <div class="price-info">
+                  <div class="rating d-flex align-center"><p>Rating : </p><b>4.5 <span>&starf;</span></b></div>
+                  <div class="price d-flex ">
+                    <b class="d-flex "><i class="fa-solid fa-indian-rupee-sign"></i>83,990</b>
+                    <b class=" strikethrough">MRP : <i class="fa-solid fa-indian-rupee-sign"></i>1,49,900</b>
+                  </div>
+                </div>
+                <div class="btn-section d-flex">
+                  <button class="view-more">View More</button>
+                  <button class="cart-btn">Add to cart</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <!-- SMARTPHONES SECTION -->
+        <section class="product Smartphones container" id="Smartphones">
+          <div class="heading">
+            <h2>Smartphones & Accessories</h2>
+            <h3>Connect, Capture, and Communicate with the Latest Mobile Innovations.</h3>
+            <div class="product-container d-flex justify-space-between">
+
+              <div class="product-card">
+                <div class="product-image d-flex justify-center">
+                  <img src="/Images/shopping (1).jpg" alt="">
+                </div>
+                <div class="product-description">
+                  <h2>Vivo Y300 5G</h2>
+                  <p>Titanium Silver, 8GB RAM, 128GB Storage, with No Cost EMI/Additional Exchange Offers</p>
+                </div>
+                <div class="price-info">
+                  <div class="rating d-flex align-center"><p>Rating : </p><b>4.2 <span>&starf;</span></b></div>
+                  <div class="price d-flex ">
+                    <b class="d-flex "><i class="fa-solid fa-indian-rupee-sign"></i>21,999</b>
+                    <b class=" strikethrough">MRP : <i class="fa-solid fa-indian-rupee-sign"></i>26,999</b>
+                  </div>
+                </div>
+                <div class="btn-section d-flex">
+                  <button class="view-more">View More</button>
+                  <button class="cart-btn">Add to cart</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image d-flex justify-center">
+                  <img src="/Images/GalaxyM05.png" alt="">
+                </div>
+                <div class="product-description">
+                  <h2>Samsung Galaxy M05 </h2>
+                  <p>Mint Green, 4GB RAM, 64 GB Storage | 50MP Dual Camera | Bigger 6.7" HD+ Display | 5000mAh Battery | 25W Fast Charging | 2 Gen OS Upgrade & 4 Year Security Update | Without Charger</p>
+                </div>
+                <div class="price-info">
+                  <div class="rating d-flex align-center"><p>Rating : </p><b>4.0 <span>&starf;</span></b></div>
+                  <div class="price d-flex ">
+                    <b class="d-flex "><i class="fa-solid fa-indian-rupee-sign"></i>6,499</b>
+                    <b class=" strikethrough">MRP : <i class="fa-solid fa-indian-rupee-sign"></i>9,999</b>
+                  </div>
+                </div>
+                <div class="btn-section d-flex">
+                  <button class="view-more">View More</button>
+                  <button class="cart-btn">Add to cart</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image d-flex justify-center">
+                  <img src="/Images/OnePlusMobile.jpg" alt="">
+                </div>
+                <div class="product-description">
+                  <h2>OnePlus Nord CE4 Lite 5G</h2>
+                  <p>Mega Blue, 8GB RAM, 128GB Storage</p>
+                </div>
+                <div class="price-info">
+                  <div class="rating d-flex align-center"><p>Rating : </p><b>4.1 <span>&starf;</span></b></div>
+                  <div class="price d-flex ">
+                    <b class="d-flex "><i class="fa-solid fa-indian-rupee-sign"></i>17,998</b>
+                    <b class=" strikethrough">MRP : <i class="fa-solid fa-indian-rupee-sign"></i>20,999</b>
+                  </div>
+                </div>
+                <div class="btn-section d-flex">
+                  <button class="view-more">View More</button>
+                  <button class="cart-btn">Add to cart</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image d-flex justify-center">
+                  <img src="/Images/RedmiA4.jpg" alt="">
+                </div>
+                <div class="product-description">
+                  <h2>Redmi A4 5G (Sparkle Purple, 4GB RAM, 128GB Storage)</h2>
+                  <p>Global Debut SD 4s Gen 2 | Segment Largest 6.88in 120Hz | 50MP Dual Camera | 18W Fast Charging</p>
+                </div>
+                <div class="price-info">
+                  <div class="rating d-flex align-center"><p>Rating : </p><b>4.0 <span>&starf;</span></b></div>
+                  <div class="price d-flex ">
+                    <b class="d-flex "><i class="fa-solid fa-indian-rupee-sign"></i>8,999</b>
+                    <b class=" strikethrough">MRP : <i class="fa-solid fa-indian-rupee-sign"></i>11,999</b>
+                  </div>
+                </div>
+                <div class="btn-section d-flex">
+                  <button class="view-more">View More</button>
+                  <button class="cart-btn">Add to cart</button>
+                </div>
+              </div>
+
+            </div>
+          
+        </section>
+        <!-- HEADPHONES SECTION -->
+        <section class="product Headphones container" id="Headphones">
+          <div class="heading">
+            <h2>Headphones</h2>
+            <h3>Immerse Yourself in Pure Sound. Explore Our Range of Premium Headphones.</h3>
+
+            <div class="product-container d-flex justify-space-between">
+
+              <div class="product-card">
+                <div class="product-image d-flex justify-center">
+                  <img src="/Images/BoAtRockerz.png" alt="">
+                </div>
+                <div class="product-description">
+                  <h2>boAt Rockerz 460 Wireless</h2>
+                  <p>Over Ear Headphones W/Up to 30Hrs Playtime, 40Mm Drivers, Signature Sound, Beast Mode, Enx, Dual Pairing, Bt V5.2, Instant Voice Assistant, Adaptive Fit(Bold Blue)</p>
+                </div>
+                <div class="price-info">
+                  <div class="rating d-flex align-center"><p>Rating : </p><b>3.9 <span>&starf;</span></b></div>
+                  <div class="price d-flex">
+                    <b class="d-flex "><i class="fa-solid fa-indian-rupee-sign"></i>1,499</b>
+                    <b class=" strikethrough">MRP : <i class="fa-solid fa-indian-rupee-sign"></i>2,499</b>
+                  </div>
+                </div>
+                <div class="btn-section d-flex">
+                  <button class="view-more">View More</button>
+                  <button class="cart-btn">Add to cart</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image d-flex justify-center">
+                  <img src="/Images/AmazonBasicsTWS.png" alt="">
+                </div>
+                <div class="product-description">
+                  <h2>Amazon basics True Wireless</h2>
+                  <p>In-Ear Earbuds with Mic, Low-Latency Gaming Mode, Touch Control, IPX5 Water-Resistance, Bluetooth 5.3, Up to 60 Hours Play Time, Voice Assistance and Fast Charging (Black)</p>
+                </div>
+                <div class="price-info">
+                  <div class="rating d-flex align-center"><p>Rating : </p><b>3.4 <span>&starf;</span></b></div>
+                  <div class="price d-flex ">
+                    <b class="d-flex "><i class="fa-solid fa-indian-rupee-sign"></i>768</b>
+                    <b class=" strikethrough">MRP : <i class="fa-solid fa-indian-rupee-sign"></i>2,499</b>
+                  </div>
+                </div>
+                <div class="btn-section d-flex">
+                  <button class="view-more">View More</button>
+                  <button class="cart-btn">Add to cart</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image d-flex justify-center">
+                  <img src="/Images/JBLheadphone.png" alt="">
+                </div>
+                <div class="product-description">
+                  <h2>JBL Tune 510BT</h2>
+                  <p>On Ear Wireless Headphones with Mic, up to 40 Hours Playtime, Pure Bass, Quick Charging, Dual Pairing, Bluetooth 5.0 & Voice</p>
+                </div>
+                <div class="price-info">
+                  <div class="rating d-flex align-center"><p>Rating : </p><b>4.0 <span>&starf;</span></b></div>
+                  <div class="price d-flex ">
+                    <b class="d-flex "><i class="fa-solid fa-indian-rupee-sign"></i>2,799</b>
+                    <b class=" strikethrough">MRP : <i class="fa-solid fa-indian-rupee-sign"></i>4,449</b>
+                  </div>
+                </div>
+                <div class="btn-section d-flex">
+                  <button class="view-more">View More</button>
+                  <button class="cart-btn">Add to cart</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image d-flex justify-center">
+                  <img src="/Images/BoultHeadphone.png" alt="">
+                </div>
+                <div class="product-description">
+                  <h2>Boult X Mustang Newly Launched Q</h2>
+                  <p>Over Ear Bluetooth Headphones with 70H Playtime, 40mm Bass Drivers, Zen™ ENC Mic, Type-C Fast Charging, 4 EQ Modes, Bluetooth 5.4, AUX Option, IPX5 Wireless Headphones</p>
+                </div>
+                <div class="price-info">
+                  <div class="rating d-flex align-center"><p>Rating : </p><b>4.1 <span>&starf;</span></b></div>
+                  <div class="price d-flex ">
+                    <b class="d-flex "><i class="fa-solid fa-indian-rupee-sign"></i>2,499</b>
+                    <b class=" strikethrough">MRP : <i class="fa-solid fa-indian-rupee-sign"></i>6,999</b>
+                  </div>
+                </div>
+                <div class="btn-section d-flex">
+                  <button class="view-more">View More</button>
+                  <button class="cart-btn">Add to cart</button>
+                </div>
+              </div>
+
+            </div>
+          
+        </section>
+        <!-- SPEAKERS SECTION -->
+        <section class="product Speakers container" id="Speakers">
+          <div class="heading">
+            <h2>Speakers</h2>
+            <h3>Amplify Your Audio Experience. Discover Powerful Sound Solutions.</h3>
+            <div class="product-container d-flex justify-space-between">
+
+              <div class="product-card">
+                <div class="product-image d-flex justify-center">
+                  <img src="/Images/SonyHTS20R.png" alt="">
+                </div>
+                <div class="product-description">
+                  <h2>Sony HT-S20R Real 5.1ch Soundbar</h2>
+                  <p>Dolby Digital Soundbar for TV with subwoofer and Compact Rear Speakers, 5.1ch Home Theatre System (400W,Bluetooth & USB Connectivity, HDMI & Optical connectivity)</p>
+                </div>
+                <div class="price-info">
+                  <div class="rating d-flex align-center"><p>Rating : </p><b>4.6 <span>&starf;</span></b></div>
+                  <div class="price d-flex ">
+                    <b class="d-flex "><i class="fa-solid fa-indian-rupee-sign"></i>17,990</b>
+                    <b class=" strikethrough">MRP : <i class="fa-solid fa-indian-rupee-sign"></i>23,990</b>
+                  </div>
+                </div>
+                <div class="btn-section d-flex">
+                  <button class="view-more">View More</button>
+                  <button class="cart-btn">Add to cart</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image d-flex justify-center">
+                  <img src="/Images/BoatStone.png" alt="">
+                </div>
+                <div class="product-description">
+                  <h2>boAt Stone 580 Bluetooth Speaker with 12W RMS Stereo Sound</h2>
+                  <p>LED Lights, Up to 8 HRS Playtime, TWS Feature, FM Radio, Multi-Compatibility Mode, IPX4(Midnight Black)</p>
+                </div>
+                <div class="price-info">
+                  <div class="rating d-flex align-center"><p>Rating : </p><b>3.6 <span>&starf;</span></b></div>
+                  <div class="price d-flex ">
+                    <b class="d-flex "><i class="fa-solid fa-indian-rupee-sign"></i>1,699</b>
+                    <b class=" strikethrough">MRP : <i class="fa-solid fa-indian-rupee-sign"></i>4,990</b>
+                  </div>
+                </div>
+                <div class="btn-section d-flex">
+                  <button class="view-more">View More</button>
+                  <button class="cart-btn">Add to cart</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image d-flex justify-center">
+                  <img src="/Images/JBLpartybox.png" alt="">
+                </div>
+                <div class="product-description">
+                  <h2>JBL Partybox 110, Wireless Bluetooth Party Speaker</h2>
+                  <p>160W Monstrous Pro Sound, Dynamic Light Show, Upto 12Hrs Playtime, Built-in Powerbank, Guitar & Mic Input, PartyBox App, Splashproof (Black)</p>
+                </div>
+                <div class="price-info">
+                  <div class="rating d-flex align-center"><p>Rating : </p><b>4.6 <span>&starf;</span></b></div>
+                  <div class="price d-flex ">
+                    <b class="d-flex "><i class="fa-solid fa-indian-rupee-sign"></i>24,999</b>
+                    <b class=" strikethrough">MRP : <i class="fa-solid fa-indian-rupee-sign"></i>35,999</b>
+                  </div>
+                </div>
+                <div class="btn-section d-flex">
+                  <button class="view-more">View More</button>
+                  <button class="cart-btn">Add to cart</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image d-flex justify-center">
+                  <img src="/Images/JBLgo3.png" alt="">
+                </div>
+                <div class="product-description">
+                  <h2>JBL Go 3, Wireless Ultra Portable Bluetooth Speaker,</h2>
+                  <p>Pro Sound, Vibrant Colors with Rugged Fabric Design, Waterproof, Type C (Without Mic, Green)
+                    Visit the JBL Store</p>
+                </div>
+                <div class="price-info">
+                  <div class="rating d-flex align-center"><p>Rating : </p><b>4.4 <span>&starf;</span></b></div>
+                  <div class="price d-flex ">
+                    <b class="d-flex "><i class="fa-solid fa-indian-rupee-sign"></i>2,799</b>
+                    <b class=" strikethrough">MRP : <i class="fa-solid fa-indian-rupee-sign"></i>3,999</b>
+                  </div>
+                </div>
+                <div class="btn-section d-flex">
+                  <button class="view-more">View More</button>
+                  <button class="cart-btn">Add to cart</button>
+                </div>
+              </div>
+
+            </div>
+          
+        </section>
+        <!-- <section class="product Computers container"></section> -->
+     </section>
+    <!-- Products section end -->
+
+     <!-- Contact us section start -->
+     <section class="contactUs container " id="ContactUs">
+        <div class="form-container">
+          <span class="d-flex justify-center"><i class="fa-solid fa-envelope"></i></span>
+          <h2>Contact Us</h2>
+  
+          <form action="/action">
+            <div class="input-container ">
+              <label  for="name">
+                <input class="" type="text" name="name" id="name" placeholder="Enter your full name" required>
+              </label>
+              <label for="email">
+                <input class="" type="text" name="email" id="email" placeholder="Enter your  email" required>
+              </label>
+              
+            </div>
+            
+              <textarea name="message" id="message" required placeholder="Enter your message"></textarea>
+              <button type="submit">Submit</button>
+          </form>
+        </div>
+      
+     
+
+     </section>
+     <!-- Contact us section end -->
+
+     <!-- Footer section start -->
+      <footer>
+        <div class="container d-flex">
+          <div class="left">
+            <h2>HM Electronics is your trusted source for staying connected and empowered by technology.</h2>
+            <div class="social-media-icons d-flex align-center">
+              <div class="icon-bg"><i class="fa-brands fa-instagram"></i></div>
+              <div class="icon-bg"><i class="fa-brands fa-facebook-f"></i></div>
+              <div class="icon-bg"><i class="fa-brands fa-twitter"></i></div>
+              <div class="icon-bg"><i class="fa-brands fa-youtube"></i></div>
+            </div>
+          </div>
+          <div class="middle d-flex justify-center">
+            <div class="links ">
+              <ul>
+                <li>Blog</li>
+                <li>FAQs</li>
+                <li>Contact</li>
+                <li>Log in</li>
+              </ul>
+            </div>
+            <div class="links ">
+              <ul>
+                <li>Order Status</li>
+                <li>Wholesale</li>
+                <li>Careers</li>
+              </ul>
+            </div>
+          </div>
+          <div class="right">
+            <h4>SIGN UP FOR EMAILS</h4>
+            <p>Get latest updates and notifications of newly launched products.</p>
+            <div class="mail-section d-flex">
+              <input type="email" name="email" id="email" placeholder="Email">
+              <button>Sign Me Up</button>
+            </div>
+          </div>
+        </div>
+      </footer>
+     <!-- Footer section end -->
+    
+    <script src="/JS/script.js"></script>
+  </body>
+</html>
