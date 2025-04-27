@@ -81,8 +81,12 @@ section{
     max-width: 100%;
     aspect-ratio: 1/1;
 }
+.product-image{
+    max-width: 70%;
+    margin: 0 auto;
+}
 .product-image img{
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
 }
 .price b{
