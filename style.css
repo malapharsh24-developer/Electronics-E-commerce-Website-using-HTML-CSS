@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
+    /* overflow-x: hidden; */
 }
 
 html, body {
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 
 /* ------------------------------------------------    UTILITY classes -------------------------------------------------*/
@@ -18,10 +20,12 @@ html, body {
     height: 100%;
 }
 .container{
-    width: 100%;
     padding: 1.5rem 3rem;
     max-width: 1280px;
     margin : 0 auto;
+}
+section{
+    max-width: 100%;
 }
 /* FLEXBOX */
 
@@ -184,7 +188,7 @@ select{
     }
 
 .hero > .overlay > .left{
-    width: 50%;
+    min-width: 50%;
     /* background-color: red; */
     position: relative;
 
@@ -235,7 +239,7 @@ select{
 
 
 .hero > .overlay > .right{
-    width: 50%;
+    min-width: 50%;
     padding: 1rem 0;
     & h2{
         font-size: 1.5rem;
@@ -533,6 +537,7 @@ footer {
     background: #0e0e0e;
     color : rgb(99, 99, 99);
     padding: 3rem 0;  
+    max-width: 100%;
 }
 footer > .container {
     justify-content: space-evenly;
